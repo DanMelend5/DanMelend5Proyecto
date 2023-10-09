@@ -75,7 +75,7 @@
 
               <<div class="carousel-caption text-end">
                 <h1>  Conferencia techBsAs  </h1>
-                <p> techBsAs llega por primera vez a Argentina.
+                <p class ="lead"> techBsAs llega por primera vez a Argentina.
                     Préparate a para recibir a los grandes exponentes de la tecnología en Buenos Aires- Argentina.
                     Gracias a nuestra poderosa máquina del tiempo, podras conocer a algunos de los pioneros de la computación y
                     a otros estudiantes de Codo a Codo y a los oradores de primer que nivel que tenemos para ti. ¡Te esperamos!
@@ -101,7 +101,7 @@
           <section class="container mb-4" id="oradores">
           
             <h2 class="text-center">
-                <div>CONOCE A LOS</div>
+                <div class="fs-6">CONOCE A LOS</div>
                 ORADORES
            </h2>
            <div class="row">
@@ -127,8 +127,9 @@
 
                <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
                     <img src="./assets/img/ada.jpeg"alt="Ada Lovelace" class="w-100 h-50 definicion" loading="lazy">
-                    <h4>Algoritmos</h4>
-                    <h4>Assembly</h4>
+                  
+                   <h4>Algoritmos</h4>
+                   <h4>Assembly</h4>
                     <h3>Ada Lovelace</h3>
                     <p>Augusta Ada King, condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), fue una matemática y escritora británica, 
                     célebre por haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina,
@@ -155,67 +156,88 @@
               </div>
 
             </div>
-          
-             
-          
-
-          <section id="formularioOrador">
-            <h2>Conviertete en orador</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit odio molestiae!</p>
-            <form action="./pages/404.html" method="get">
-                <div>
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-                </div>
-                <br>
-                <div>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@servidor.com">
-                    <input type="password" placeholder="contraseña">
-                   
-                </div>
-                <br>
-                <div>
-                    <textarea name="comentario" id="comentario" cols="55" rows="5" placeholder="Sobre qué quieres hablar?" required></textarea>
-                </div>
-                <div>
-                    <input type="reset" value="Limpiar formulario">
-                    <input type="submit" value="Enviar formulario">
-                </div>
-            </form>
+    
+          <section id="formularioOrador" >
+           
+            <h2 class="text-center">
+              <div class = "fs-6" class = "fw-bold" >CONVIÉRTETE EN UN</div>
+              ORADOR
+         </h2>
+              <div>
+                <input type="text" class="form-control form-control-sm"" id="exampleFormControlInput1" placeholder="Nombre">
+                <input type="text" class="form-control form-control-sm"" id="exampleFormControlInput1" placeholder="Apellido">
+              
+              </div>
+                
+               
+              <div class="mb-3">
+                
+                <textarea class="form-control"  id="exampleFormControlTextarea1" rows="5" cols="100" placeholder="¿Sobre qué quieres hablar?" required></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label">Recuerda incluir un título para tu charla</label>
+              </div>            
+           
           </section>
          
         </main>
         <aside>
-            <p>PUBLICIDAD</p>
+          <aside>
+            <p>Publicidad</p>
             <div>
-                <iframe width="400" height="500"  src="https://www.youtube.com/embed/ptXiQwE535s?controls=0&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            <!--estructurar posible publicidad-->
-            <div>
-                <iframe width="400"  src="https://www.youtube.com/embed/ptXiQwE535s?controls=0&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <li>
+                    <h4>
+                        Ven a disfrutar del Caribe en la posada <a href="./pages/404Page.html">Las Jaibas</a> 
+                    </h4>
+                    <a href="./pages/404Page.html"> 
+                    <img src="./assets/img/posadaJaibas.jpg" alt ="Foto de una posada con pileta"  width="400" height="300" loading="lazy">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.152936421043!2d-67.77518856114905!3d10.486729629517622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e804b33d26f8f15%3A0x4bb08a996fede470!2sPosada%20Las%20Jaibas!5e0!3m2!1sen!2sar!4v1694643956994!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </a>
+                </li>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
             <div>
-                <iframe width="400"  src="https://www.youtube.com/embed/SIotISUq-3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <h4> ¿Java o Java Script? </h4>
+                <p>¿que lenguaje es el mejor? ¿Cual es el supremo?</p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/woFCtpMXNNc?si=ww0aMQ8nwfR9NBGr" title="YouTube video player"
+                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+
+            <div>
+                <h4> ¿Vale la pena Programar en Java? <h4>
+                <p>lorem dolor.....</p>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/QCrcz_1-OPo?si=PhN9Yyt12ojcVR0g&amp;start=770" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
         </aside>
 
        
-        <footer>
-            footer
+        <footer id = "footer ">
+          <ul class="nav justify-content-center nav-fill  footer">
+            <li class="nav-item">
+              <a class="nav-link colorBlanco" href="./pages/404Page.html">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorBlanco" href="./pages/404Page.html">Contáctanos </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorBlanco" href="./pages/404Page.html">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorBlanco" href="./pages/404Page.html">Conferencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorBlanco" href="./pages/404Page.html">Términos y Condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorBlanco" href="./pages/404Page.html">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorBlanco" href="./pages/404Page.html">Estudiantes</a>
+            </li>
+           
+          </ul>
         </footer>
       <script src="./js/bootstrap.bundle.min.js"></script>  
     </body>
 </html>
 
-
-
-<!--etiquetas cerradas 
-<etiqueta atributo="valor" atributoSinValor> contenido , puede ser texto o pueden ser otra/s etiqueta/s</etiqueta>-->
-
-<!--etiquetas abiertas
-<etiqueta atributo="valor" atributoSinValor>-->

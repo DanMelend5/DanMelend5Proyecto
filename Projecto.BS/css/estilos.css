@@ -24,3 +24,13 @@ body{
 .colorBlanco{
     color: white;
 }
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,76,102,1) 76%, rgba(0,212,255,1) 100%);
+}

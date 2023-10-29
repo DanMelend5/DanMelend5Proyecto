@@ -6,56 +6,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto Integrador Front |  Daniel Melendez</title>
         <!--favicon-->
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel = "stylesheet" href = "custom/custom.scss">
+        <link rel = "stylesheet" href = "../custom/custom.scss">
         <link rel="stylesheet" href="../css/estilos.css">
         
 
     </head>
     <!--dentro del body van a ir las etiquetas que el usuario va a poder ver en la pagina web-->
     <body>
-        <header>
-     
-            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary myNavBar">
-                <div class="container">
-                  <a class="navbar-brand" href= "../index.html">
-                    <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="100px" loading="lazy">
-                  </a>
-                  <div class = "colorBlanco">
-                    <h4> Conferencia techBsAs</h4>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg colorGris">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="100px" loading="lazy">
+              </a>
+              <div class = "colorBlanco">
+                <h4> Conferencia techBsAs</h4>
+            </div>
 
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#oradores">Los oradores</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#lugarFecha">Lugar y Fecha</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#formularioOrador">Convierte en Orador</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link colorVerde" href="./pages/404Page.html">Comprar tickets</a>
-                      </li>
-                    
-                   
-                    </ul>
-                  
-                  </div>
-                </div>
-              </nav>
-          
-        </header>
-        
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end nav-link colorBlanco">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="#conferencia">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#oradores">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#lugarFecha">Lugar y Fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#formularioOrador">Convierte en Orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="colorGris nav-link colorVerde" href="../pages/comprarTickets.html">Comprar tickets</a>
+                  </li>
+                </ul>
+             </div>
+            </div>
+          </nav>
+    </header>
+      
+      
         <main>
             
            
@@ -99,11 +95,29 @@
                   por lo que se la considera como la primera programadora de ordenadores..</p>
              </div>
          </div>
-        
-      
-
-
+            
         </section>
+
+        <section id="formularioOrador" >
+           
+            <h2 class="text-center">
+              <div class = "fs-6" class = "fw-bold" >CONVIÉRTETE EN UN</div>
+              ORADOR
+         </h2>
+              <div>
+                <input type="text" class="form-control form-control-sm"" id="exampleFormControlInput1" placeholder="Nombre">
+                <input type="text" class="form-control form-control-sm"" id="exampleFormControlInput1" placeholder="Apellido">
+              
+              </div>
+                
+               
+              <div class="mb-3">
+                
+                <textarea class="form-control"  id="exampleFormControlTextarea1" rows="5" cols="100" placeholder="¿Sobre qué quieres hablar?" required></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label">Recuerda incluir un título para tu charla</label>
+              </div>            
+           
+          </section>
        
         <footer>
             <footer id = "footer ">

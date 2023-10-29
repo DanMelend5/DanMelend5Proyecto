@@ -16,22 +16,22 @@ body{
 
 
 
-.myNavBar{
+.colorGris{
     background-color:#39464e;
 }
 
-.myNavBar .nav-link {
+.colorGris  .nav-link {
     color: white;
 
 }
 
-.myNavBar.nav-link.colorVerde{
+.colorGris   .nav-link.colorVerde{
     color: #28a142;
 }
     
 
 .myCarousel{
-    object-fit: cover; 
+   
     height: 100vh;
     
 }
@@ -43,10 +43,13 @@ body{
 .formulario {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 
 .footer{
+    margin-top: auto;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,76,102,1) 76%, rgba(0,212,255,1) 100%);
+    padding: 20px 0;
 }

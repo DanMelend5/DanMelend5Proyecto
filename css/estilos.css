@@ -13,14 +13,28 @@ body{
 .definicion{
     object-fit: cover;
 }
-.navbar-dark .navbar-nav .nav-link.colorVerde{
-    color:rgb(67, 236, 67);
+
+
+
+.myNavBar{
+    background-color:#39464e;
 }
+
+.myNavBar .nav-link {
+    color: white;
+
+}
+
+.myNavBar.nav-link.colorVerde{
+    color: #28a142;
+}
+    
+
 .myCarousel{
     object-fit: cover; 
     height: 100vh;
+    
 }
-
 
 .colorBlanco{
     color: white;
@@ -31,7 +45,8 @@ body{
     justify-content: center;
 }
 
+
 .footer{
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,76,102,1) 76%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,76,102,1) 76%, rgba(0,212,255,1) 100%);
 }

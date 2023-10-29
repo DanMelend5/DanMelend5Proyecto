@@ -17,7 +17,7 @@
     <body>
         <header>
      
-            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary grisOscuro">
+            <nav class="navbar navbar-expand-lg myNavBar">
                 <div class="container">
                   <a class="navbar-brand" href="#">
                     <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="100px" loading="lazy">
@@ -27,12 +27,12 @@
                 </div>
 
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end nav-link colorBlanco">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
+                        <a class="nav-link active " aria-current="page" href="#conferencia">La conferencia</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#oradores">Los oradores</a>
@@ -44,7 +44,7 @@
                         <a class="nav-link" href="#formularioOrador">Convierte en Orador</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link colorVerde" href="./pages/comprarTickets.html">Comprar tickets</a>
+                        <a class="myNavBar nav-link colorVerde" href="./pages/comprarTickets.html">Comprar tickets</a>
                       </li>
                     
                    
@@ -59,31 +59,25 @@
         <main class="container-fluid">
 
 
-          <section id = Conferencia class="myCarousel" >
+          <section id = "conferencia" class="myCarousel" >
+            
+
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./assets/img/palacioAguas.jpg" class="d-block w-100 myCarousel" alt="Palacio de las aguas argentinas" >
+              
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/palacioAguas.jpg" class="d-block w-100 myCarousel" alt="Palacio de las aguas argentinas" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/portada-cupulas-1000x520.jpg" class="d-block w-100 myCarousel" alt="...">
+                  </div>
+                  <div class="carousel-item carous">
+                    <img src="./assets/img/ba3.jpg" class="d-block w-100 myCarousel" alt="...">
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="./assets/img/portada-cupulas-1000x520.jpg" class="d-block w-100 myCarousel" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./assets/img/ba3.jpg" class="d-block w-100 myCarousel" alt="...">
-                </div>
-              </div>
-
-              <<div class="carousel-caption text-end">
-                <h1>  Conferencia techBsAs  </h1>
-                <p class ="lead"> techBsAs llega por primera vez a Argentina.
-                    Préparate a para recibir a los grandes exponentes de la tecnología en Buenos Aires- Argentina.
-                    Gracias a nuestra poderosa máquina del tiempo, podras conocer a algunos de los pioneros de la computación y
-                    a otros estudiantes de Codo a Codo y a los oradores de primer que nivel que tenemos para ti. ¡Te esperamos!
-                </p>
-                <a href="#formularioOrador">Quiero ser orador</a>
-                <a href="./pages/404Page.html"> Quiero comprar tickets</a>        
-              </div> 
-
+              
+                          
+             
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="object-fit: cover; height: 100vh;">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -92,7 +86,21 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
+              
+              <div class="carousel-caption text-end">
+                <h1>  Conferencia techBsAs  </h1>
+                <p class ="lead"> techBsAs llega por primera vez a Argentina.
+                    Préparate a para recibir a los grandes exponentes de la tecnología en Buenos Aires- Argentina.
+                    Gracias a nuestra poderosa máquina del tiempo, podras conocer a algunos de los pioneros de la computación y
+                    a otros estudiantes de Codo a Codo y a los oradores de primer que nivel que tenemos para ti. ¡Te esperamos!
+                </p>
+                <a href="#formularioOrador">Quiero ser orador</a>
+                <a href="./pages/404Page.html"> Quiero comprar tickets</a>        
             </div>  
+            
+             
+            </div> 
+            
             
             
               
@@ -141,7 +149,7 @@
 
 
           </section>
-          <section id="lugarFecha ">
+          <section id="lugarFecha">
             <div class="container-fluid bg-secondary">
               <div class="row">
                 <div class="col">

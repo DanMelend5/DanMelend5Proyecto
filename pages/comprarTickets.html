@@ -64,60 +64,90 @@
               ORADORES
          </h2>
          <div class="row">
-              <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
-                  <img src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs" class="w-100 h-50 definicion" loading="lazy">
-                  <h4>Swift</h4>
-                  <h4>JavaScript</h4>
-                  <h3>Steve Jobs</h3>
-                  <p>Steven Paul Jobs (San Francisco, 24 de febrero de 1955-Palo Alto, 5 de octubre de 2011) 
-                  fue un empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor estadounidense.
-                  Fue cofundador y presidente ejecutivo de Apple y máximo accionista individual de The Walt Disney Company.</p>
-            
+            <div class="card" style="width: 20rem;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Estudiante</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Tienen un descuento</h6>
+                  <p class="card-text">80% <br> <div class ="fs-6" >
+                    *Presentar documentacion
+                  </div></p>
+                  
                 </div>
-             <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
-                  <img src="./assets/img/bill.jpg" alt="Bill Gates" class="w-100 h-50 definicion" loading="lazy">
-                  <h4>C++</h4>
-                      <h4>BASIC</h4>
-                      <h3>Bill Gates</h3>
-                      <p>Bill Gates es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen,
-                      donde ocupó los cargos de presidente, director ejecutivo (CEO), presidente y arquitecto jefe de software, 
-                      además de ser el mayor accionista individual hasta mayo de 2014.</p>
               </div>
+              <div>
+                <div class="card" style="width: 20rem;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Trainee</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Tienen un descuento</h6>
+                  <p class="card-text">50% <br> <div class ="fs-6" >
+                    *Presentar documentacion
+                  </div></p>                  
+                </div>
+            </div>
+              <div>
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Junior</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Tienen un descuento</h6>
+                      <p class="card-text">15% <br> <div class ="fs-6" >
+                        *Presentar documentacion
+                      </div></p>                  
+                    </div>
+              </div>
+              
 
-             <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
-                  <img src="./assets/img/ada.jpeg"alt="Ada Lovelace" class="w-100 h-50 definicion" loading="lazy">
-                
-                 <h4>Algoritmos</h4>
-                 <h4>Assembly</h4>
-                  <h3>Ada Lovelace</h3>
-                  <p>Augusta Ada King, condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), fue una matemática y escritora británica, 
-                  célebre por haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina,
-                  por lo que se la considera como la primera programadora de ordenadores..</p>
-             </div>
-         </div>
-            
+               
         </section>
 
-        <section id="formularioOrador" >
-           
-            <h2 class="text-center">
-              <div class = "fs-6" class = "fw-bold" >CONVIÉRTETE EN UN</div>
-              ORADOR
-         </h2>
-              <div>
-                <input type="text" class="form-control form-control-sm"" id="exampleFormControlInput1" placeholder="Nombre">
-                <input type="text" class="form-control form-control-sm"" id="exampleFormControlInput1" placeholder="Apellido">
-              
+        <section id="valorTicket" class="seccion" >
+            <div class="text-center">
+                <p class="fs-6"> VENTA</p>
+              <h2 class = "fw-bold">
+                VALOR DE TICKET $ 200
+              </h2>
+             
+            </div>
+            
+  
+              <div class="container overflow-hidden">
+                <div class="row gy-3">
+                
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Correo" aria-label="Last name">
+                    </div>
+                    <div class="col">
+                        <label for="Cantidad" class="form-label">Cantidad</label>
+                        <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Categoria</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Estudiante</option>
+                          <option>Trainee</option>
+                          <option>Junior</option>
+                        </select>
+                      </div>
+                      
+                      <div class="col-6">
+                        <button type="submit" class="btn btn-primary">Borrar</button>
+                      </div>  
+                      <div class="col-6">
+                                                <button type="submit" class="btn btn-primary">Resumen</button>
+                      </div>  
+                            
+                </div>
               </div>
-                
+                 
+                    
                
-              <div class="mb-3">
-                
-                <textarea class="form-control"  id="exampleFormControlTextarea1" rows="5" cols="100" placeholder="¿Sobre qué quieres hablar?" required></textarea>
-                <label for="exampleFormControlTextarea1" class="form-label">Recuerda incluir un título para tu charla</label>
-              </div>            
-           
-          </section>
+             
+            </section>
        
         <footer>
             <footer id = "footer ">

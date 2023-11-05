@@ -5,12 +5,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Integrador Front | Daniel Melendez</title>
+    <title>Comprar Tickets|Proyecto Integrador Front | Daniel Melendez</title>
     <!--favicon-->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../custom/custom.scss">
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/myScript.js"></script>
   </head>
   <body>
     <div class="content-wrapper justify-content-center">
@@ -106,41 +107,45 @@
               <div class="row gy-3 needs-validation" novalidate>
                 <div class="col">
                   <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
-                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                  <div id="divErrorCampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col">
                   <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
-                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                  <div id="divErrorCampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col-12">
-                  <input id="correo" type="text" class="form-control" placeholder=tucorreo@email.com" aria-label="email" required>
+                  <input id="correo" type="text" class="form-control" placeholder="tucorreo@email.com" aria-label="email" required>
                   <div id="divCorreoInvalido" class="invalid-feedback"> Ingrese un correo válido </div>
+                  <div id="divErrorCampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                
                 </div>
                 <div class="col">
                   <label for="cantidadTicket" class="form-label">Cantidad</label>
-                  <input type="text" class="form-control" placeholder="Cantidad de tickets" aria-label="Cantidad" required>
-                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                  <input id="cantidadTicket" type="text" class="form-control" placeholder="Cantidad de tickets" aria-label="Cantidad" required>
+                  <div id="divErrorCampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                  <div id="divErrorNumerodeTickets" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col-md-4">
                   <label for="categoriaSeleccion" class="form-label " required>Categoria</label>
                   <select id="categoriaSeleccion" class="form-select ">
-                    <option selected>----</option>                    
+                    <option selected>----</option>
                     <option>Estudiante</option>
                     <option>Trainee</option>
                     <option>Junior</option>
-                    <option>Sin categoría</option>
+                    <option>Otro</option>
                   </select>
                   <div id="divErrorSeleccion" class="invalid-feedback"> Tiene que escoger una opción</div>
                 </div>
                 <fieldset disabled>
                   <div class="col-12">
-                    <input type="text" class="form-control bg-info" placeholder="Total $" aria-label="total">
+                    <input id="totalPago"  type="text" class="form-control bg-info" placeholder="Total $" aria-label="total">
                 </fieldset>
               </div>
               <div class="row gy-3 py-3">
                 <div class="col text-center">
-                  <button type="submit" class="col-md-4 btn btn-lg text-center btn-success">Borrar</button>
-                  <button type="submit" class="col-md-4 btn btn-lg text-center btn-success">Resumen</button>
+                <button id="btnBorrar" type="button" class="col-md-4 btn btn-lg text-center btn-success">Borrar</button>
+                <button id="btnComprar" type="button" class="col-md-4 btn btn-lg text-center btn-success">Comprar</button>
+  
                 </div>
               </div>
           </div>
@@ -174,7 +179,8 @@
         </li>
       </ul>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+   
   </body>
 </html>
 </html>

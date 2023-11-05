@@ -105,77 +105,76 @@
             <form action="" class="container overflow-hidden">
               <div class="row gy-3 needs-validation" novalidate>
                 <div class="col">
-                  <input type="text" class="form-control" id = "nombreValidacion" placeholder="Nombre" aria-label="Nombre" required>
-                  <div id = "nombreValidacion" class="is-valid">
-                    ¡se ve bien!
-                  </div>
-                  <div id = "nombreValidacion" class="invalid-feedback is-invalid"">
-                    Por favor ingrese un nombre.
-                  </div>
+                  <input type="text" class="form-control" id="nombreValidacion" placeholder="Nombre" aria-label="Nombre" required>
+                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido required>
+                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col-12">
-                  <input type="text" class="form-control" placeholder=tucorreo@email.com" aria-label="email" required >
+                  <input type="text" class="form-control" placeholder=tucorreo@email.com" aria-label="email" required>
+                  <div id="divCorreoInvalido" class="invalid-feedback"> Ingrese un correo válido </div>
                 </div>
                 <div class="col">
                   <label for="Cantidad" class="form-label">Cantidad</label>
                   <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
+                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col-md-4">
                   <label for="inputState" class="form-label" required>Categoria</label>
                   <select id="inputState" class="form-select">
-                    <option selected>Sin categoría</option>
+                    <option selected>----</option>                    
                     <option>Estudiante</option>
                     <option>Trainee</option>
                     <option>Junior</option>
+                    <option>Sin categoría</option>
                   </select>
-                  
+                  <div id="divErrorSeleccion" class="invalid-feedback">Debe seleccionar una opción</div>
                 </div>
                 <fieldset disabled>
-                <div class="col-12">
-                  <input type="text" class="form-control" placeholder="Total $" aria-label="total">
+                  <div class="col-12">
+                    <input type="text" class="form-control bg-info" placeholder="Total $" aria-label="total">
                 </fieldset>
-                </div>
-                 <div class="row gy-3 py-3">
-                  <div class = "col text-center">
-                    <button type="submit" class="btn btn-lg btn-success">Borrar</button>
-                    <button type="submit" class="btn btn-lg btn-success">Resumen</button>
-                  </div>
+              </div>
+              <div class="row gy-3 py-3">
+                <div class="col text-center">
+                  <button type="submit" class="btn btn-lg btn-success">Borrar</button>
+                  <button type="submit" class="btn btn-lg btn-success">Resumen</button>
                 </div>
               </div>
-            </div>
           </div>
-        </section>
     </div>
-      </main>
-      <footer id="footer ">
-        <ul class="nav justify-content-center nav-fill  footer">
-          <li class="nav-item">
-            <a class="nav-link colorBlanco" href="./pages/404Page.html">Preguntas Frecuentes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colorBlanco" href="../pages/404Page.html">Contáctanos </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colorBlanco" href="../pages/404Page.html">Prensa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colorBlanco" href="../pages/404Page.html">Conferencias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colorBlanco" href="../pages/404Page.html">Términos y Condiciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colorBlanco" href="../pages/404Page.html">Privacidad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colorBlanco" href="../pages/404Page.html">Estudiantes</a>
-          </li>
-        </ul>
-      </footer>
-      <script src="./js/bootstrap.bundle.min.js"></script>
+    </div>
+    </section>
+    </div>
+    </main>
+    <footer id="footer ">
+      <ul class="nav justify-content-center nav-fill  footer">
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="./pages/404Page.html">Preguntas Frecuentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="../pages/404Page.html">Contáctanos </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="../pages/404Page.html">Prensa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="../pages/404Page.html">Conferencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="../pages/404Page.html">Términos y Condiciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="../pages/404Page.html">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="../pages/404Page.html">Estudiantes</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
 </html>

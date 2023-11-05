@@ -73,8 +73,10 @@
           <div class="carousel-caption text-end">
             <h1> Conferencia techBsAs </h1>
             <p class="lead"> techBsAs llega por primera vez a Argentina. Préparate a para recibir a los grandes exponentes de la tecnología en Buenos Aires- Argentina. Gracias a nuestra poderosa máquina del tiempo, podras conocer a algunos de los pioneros de la computación y a otros estudiantes de Codo a Codo y a los oradores de primer que nivel que tenemos para ti. ¡Te esperamos! </p>
-            <a href="#formularioOrador">Quiero ser orador</a>
-            <a href="./pages/404Page.html"> Quiero comprar tickets</a>
+            <a href="#formularioOrador"> 
+              <button type="submit" class="btn btn-success">Quiero ser orador </button> </a></a>
+            <a href="./pages/comprarTickets.html"> 
+              <button type="submit" class="btn btn-success">Quiero comprar tickets </button> </a>
           </div>
         </div>
       </section>
@@ -110,37 +112,46 @@
         <div class="container-fluid colorGris">
           <div class="row">
             <div class="col">
-              <img src="./assets/img/honolulu.jpg" alt="Mar del plata" width="100%" loading="lazy">
+              <img src="./assets/img/honolulu.jpg" alt="Mar del plata" class= "w-100" loading="lazy">
             </div>
             <div class="col text-start colorBlanco">
               <h2>Buenos Aires - Octubre</h2>
               <p>Vení a la hermosa ciudad de Buenoas Aires, con sus azules playas al margen del Río de la Plata. Octubre es un mes con días luminosos y noches frescas. Las plazas llenan de flores por la primavera. <br>
               </p>
-              <a href="./pages/404Page.html">Conocé más</a>
+              <a href="./pages/404Page.html">
+              <button type="submit" class="btn btn-success">Conocé más</button>
+            </a>
+              
             </div>
           </div>
         </div>
-        <section id="formularioOrador" class="seccion">
+        <section id="formularioOrador">
+         <div class="tickets-container justify-content-center mx-auto">
           <div class="text-center">
             <h2>
               <div class="fs-6" class="fw-bold">CONVIÉRTETE EN UN</div> ORADOR
             </h2>
             <p> Anótate como orador para dar una charla ignite. ¡Cuéntanos de qué quieres hablar!</p>
             <div class="container overflow-hidden">
-              <div class="row gy-5">
+              <div class="row gy-4">
                 <div class="col">
                   <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                 </div>
                 <div class="col">
                   <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                 </div>
-                <div class="mb-3">
+                <div class="mb-6 text-start">
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="100" placeholder="¿Sobre qué quieres hablar?" required></textarea>
-                  <label for="exampleFormControlTextarea1" class="form-label text-s">Recuerda incluir un título para tu charla</label>
+                  <label for="exampleFormControlTextarea1" class="form-label text-s ">Recuerda incluir un título para tu charla</label>
                 </div>
               </div>
             </div>
-            <button> enviar </button>
+            <div>
+              <button class="btn btn-success btn-lg w-100" type="button">Enviar</button>
+              </div>
+            </div>
+         </div>
+
         </section>
     </main>
     <footer id="footer ">

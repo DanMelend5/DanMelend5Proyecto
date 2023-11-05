@@ -102,30 +102,43 @@
               <p class="fs-6"> VENTA</p>
               <h2 class="fw-bold"> VALOR DE TICKET $ 200 </h2>
             </div>
-            <div class="container overflow-hidden">
-              <div class="row gy-3">
+            <form action="" class="container overflow-hidden">
+              <div class="row gy-3 needs-validation" novalidate>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                  <input type="text" class="form-control" id = "nombreValidacion" placeholder="Nombre" aria-label="Nombre" required>
+                  <div id = "nombreValidacion" class="is-valid">
+                    ¡se ve bien!
+                  </div>
+                  <div id = "nombreValidacion" class="invalid-feedback is-invalid"">
+                    Por favor ingrese un nombre.
+                  </div>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
                 </div>
                 <div class="col-12">
-                  <input type="text" class="form-control" placeholder="Correo" aria-label="Last name">
+                  <input type="text" class="form-control" placeholder=tucorreo@email.com" aria-label="email" required >
                 </div>
                 <div class="col">
                   <label for="Cantidad" class="form-label">Cantidad</label>
-                  <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+                  <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
                 </div>
                 <div class="col-md-4">
-                  <label for="inputState" class="form-label">Categoria</label>
+                  <label for="inputState" class="form-label" required>Categoria</label>
                   <select id="inputState" class="form-select">
-                    <option selected>Estudiante</option>
+                    <option selected>Sin categoría</option>
+                    <option>Estudiante</option>
                     <option>Trainee</option>
                     <option>Junior</option>
                   </select>
+                  
                 </div>
-                <div class="row gy-3">
+                <fieldset disabled>
+                <div class="col-12">
+                  <input type="text" class="form-control" placeholder="Total $" aria-label="total">
+                </fieldset>
+                </div>
+                 <div class="row gy-3 py-3">
                   <div class = "col text-center">
                     <button type="submit" class="btn btn-lg btn-success">Borrar</button>
                     <button type="submit" class="btn btn-lg btn-success">Resumen</button>
@@ -135,6 +148,7 @@
             </div>
           </div>
         </section>
+    </div>
       </main>
       <footer id="footer ">
         <ul class="nav justify-content-center nav-fill  footer">
@@ -142,22 +156,22 @@
             <a class="nav-link colorBlanco" href="./pages/404Page.html">Preguntas Frecuentes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link colorBlanco" href="./pages/404Page.html">Contáctanos </a>
+            <a class="nav-link colorBlanco" href="../pages/404Page.html">Contáctanos </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link colorBlanco" href="./pages/404Page.html">Prensa</a>
+            <a class="nav-link colorBlanco" href="../pages/404Page.html">Prensa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link colorBlanco" href="./pages/404Page.html">Conferencias</a>
+            <a class="nav-link colorBlanco" href="../pages/404Page.html">Conferencias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link colorBlanco" href="./pages/404Page.html">Términos y Condiciones</a>
+            <a class="nav-link colorBlanco" href="../pages/404Page.html">Términos y Condiciones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link colorBlanco" href="./pages/404Page.html">Privacidad</a>
+            <a class="nav-link colorBlanco" href="../pages/404Page.html">Privacidad</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link colorBlanco" href="./pages/404Page.html">Estudiantes</a>
+            <a class="nav-link colorBlanco" href="../pages/404Page.html">Estudiantes</a>
           </li>
         </ul>
       </footer>

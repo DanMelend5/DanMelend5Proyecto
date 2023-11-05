@@ -1,233 +1,173 @@
-<!DOCTYPE html><!-- esto es un comentario , para grabar en visual ctrl+S  -->
+<!DOCTYPE html>
+<!-- esto es un comentario , para grabar en visual ctrl+S  -->
 <html lang="es">
-    <!--head: configuraciones para el navegador-->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Proyecto Integrador Front |  Daniel Melendez</title>
-        <!--favicon-->
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel = "stylesheet" href = "custom/custom.scss">
-        <link rel="stylesheet" href="./css/estilos.css">
-        
-
-    </head>
-    <!--dentro del body van a ir las etiquetas que el usuario va a poder ver en la pagina web-->
-    <body>
-        <header>
-     
-            <nav class="navbar navbar-expand-lg colorGris">
-                <div class="container">
-                  <a class="navbar-brand" href="./index.html">
-                    <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="100px" loading="lazy">
-                  </a>
-                  <div class = "colorBlanco">
-                    <h4> Conferencia techBsAs</h4>
-                </div>
-
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end nav-link colorBlanco">
-                      <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="#conferencia">La conferencia</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#oradores">Los oradores</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#lugarFecha">Lugar y Fecha</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#formularioOrador">Convierte en Orador</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="colorGris nav-link colorVerde" href="./pages/comprarTickets.html">Comprar tickets</a>
-                      </li>
-                    
-                   
-                    </ul>
-                  
-                  </div>
-                </div>
-              </nav>
-          
-        </header>
-        
-        <main class="container-fluid">
-
-
-          <section id = "conferencia" class="myCarousel" >
-            
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/img/palacioAguas.jpg" class="d-block w-100 myCarousel" alt="Palacio de las aguas argentinas" >
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/portada-cupulas-1000x520.jpg" class="d-block w-100 myCarousel" alt="...">
-                  </div>
-                  <div class="carousel-item carous">
-                    <img src="./assets/img/ba3.jpg" class="d-block w-100 myCarousel" alt="...">
-                  </div>
-                </div>
-              
-                          
-             
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="object-fit: cover; height: 100vh;">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-
-              <div class="carousel-caption text-end">
-                <h1>  Conferencia techBsAs  </h1>
-                <p class ="lead"> techBsAs llega por primera vez a Argentina.
-                    Préparate a para recibir a los grandes exponentes de la tecnología en Buenos Aires- Argentina.
-                    Gracias a nuestra poderosa máquina del tiempo, podras conocer a algunos de los pioneros de la computación y
-                    a otros estudiantes de Codo a Codo y a los oradores de primer que nivel que tenemos para ti. ¡Te esperamos!
-                </p>
-                <a href="#formularioOrador">Quiero ser orador</a>
-                <a href="./pages/404Page.html"> Quiero comprar tickets</a>        
-            </div>  
-            
-             
-            </div> 
-            
-            
-            
-              
-          </section>
-          
-          <section class="container mb-4 seccion" id="oradores">
-          
-            <h2 class="text-center">
-                <div class="fs-6">CONOCE A LOS</div>
-                ORADORES
-           </h2>
-           <div class="row">
-                <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
-                    <img src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs" class="w-100 h-50 definicion" loading="lazy">
-                    <h4>Swift</h4>
-                    <h4>JavaScript</h4>
-                    <h3>Steve Jobs</h3>
-                    <p>Steven Paul Jobs (San Francisco, 24 de febrero de 1955-Palo Alto, 5 de octubre de 2011) 
-                    fue un empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor estadounidense.
-                    Fue cofundador y presidente ejecutivo de Apple y máximo accionista individual de The Walt Disney Company.</p>
-              
-                  </div>
-               <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
-                    <img src="./assets/img/bill.jpg" alt="Bill Gates" class="w-100 h-50 definicion" loading="lazy">
-                    <h4>C++</h4>
-                        <h4>BASIC</h4>
-                        <h3>Bill Gates</h3>
-                        <p>Bill Gates es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen,
-                        donde ocupó los cargos de presidente, director ejecutivo (CEO), presidente y arquitecto jefe de software, 
-                        además de ser el mayor accionista individual hasta mayo de 2014.</p>
-                </div>
-
-               <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
-                    <img src="./assets/img/ada.jpeg"alt="Ada Lovelace" class="w-100 h-50 definicion" loading="lazy">
-                  
-                   <h4>Algoritmos</h4>
-                   <h4>Assembly</h4>
-                    <h3>Ada Lovelace</h3>
-                    <p>Augusta Ada King, condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), fue una matemática y escritora británica, 
-                    célebre por haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina,
-                    por lo que se la considera como la primera programadora de ordenadores..</p>
-               </div>
-           </div>
-          
-        
-
-
-          </section>
-
-          <section id="lugarFecha">
-            <div class="container-fluid colorGris">
-              <div class="row">
-                <div class="col">
-                  <img src="./assets/img/honolulu.jpg" alt="Mar del plata" width="100%" loading="lazy">
-                </div>
-                <div class="col text-start colorBlanco">
-                  <h2>Buenos Aires - Octubre</h2>
-             <p>Vení a la hermosa ciudad de Buenoas Aires, con sus azules playas al margen del Río de la Plata. 
-              Octubre es un mes con días luminosos y noches frescas. Las plazas llenan de flores por la primavera. <br></p>
-              
-              <a href="./pages/404Page.html">Conocé más</a>
-                </div>
-              </div>
-
-            </div>
-    
-          <section id="formularioOrador" class="seccion" >
-           <div class="text-center">
-            <h2 >
-              <div class = "fs-6" class = "fw-bold" >CONVIÉRTETE EN UN</div>
-              ORADOR
-         </h2>
-         <p> Anótate como orador para dar una charla ignite. ¡Cuéntanos de qué quieres hablar!</p>
-
-        <div class="container overflow-hidden">
-          <div class="row gy-5">
-           
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-              </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-              </div>
-
-              <div class="mb-3">
-                <textarea class="form-control"  id="exampleFormControlTextarea1" rows="5" cols="100" placeholder="¿Sobre qué quieres hablar?" required></textarea>
-                <label for="exampleFormControlTextarea1" class="form-label text-s">Recuerda incluir un título para tu charla</label>
-              </div>          
-         </div>
+  <!--head: configuraciones para el navegador-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador Front | Daniel Melendez</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom/custom.scss">
+    <link rel="stylesheet" href="./css/estilos.css">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg colorGris">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="100px" loading="lazy">
+          </a>
+          <div class="colorBlanco">
+            <h4> Conferencia techBsAs</h4>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end nav-link colorBlanco">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#conferencia">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oradores">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lugarFecha">Lugar y Fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formularioOrador">Convierte en Orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="colorGris nav-link colorVerde" href="./pages/comprarTickets.html">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
         </div>
-               
-           
-        
-              <button> enviar </button>  
-           
-          </section>
-         
-        </main>
-        
-       
-        <footer id = "footer ">
-          <ul class="nav justify-content-center nav-fill  footer">
-            <li class="nav-item">
-              <a class="nav-link colorBlanco" href="./pages/404Page.html">Preguntas Frecuentes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorBlanco" href="./pages/404Page.html">Contáctanos </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorBlanco" href="./pages/404Page.html">Prensa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorBlanco" href="./pages/404Page.html">Conferencias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorBlanco" href="./pages/404Page.html">Términos y Condiciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorBlanco" href="./pages/404Page.html">Privacidad</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorBlanco" href="./pages/404Page.html">Estudiantes</a>
-            </li>
-           
-          </ul>
-        </footer>
-      <script src="./js/bootstrap.bundle.min.js"></script>  
-    </body>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <section id="conferencia" class="myCarousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/palacioAguas.jpg" class="d-block w-100 myCarousel" alt="Palacio de las aguas argentinas">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/portada-cupulas-1000x520.jpg" class="d-block w-100 myCarousel" alt="...">
+            </div>
+            <div class="carousel-item carous">
+              <img src="./assets/img/ba3.jpg" class="d-block w-100 myCarousel" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="object-fit: cover; height: 100vh;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-caption text-end">
+            <h1> Conferencia techBsAs </h1>
+            <p class="lead"> techBsAs llega por primera vez a Argentina. Préparate a para recibir a los grandes exponentes de la tecnología en Buenos Aires- Argentina. Gracias a nuestra poderosa máquina del tiempo, podras conocer a algunos de los pioneros de la computación y a otros estudiantes de Codo a Codo y a los oradores de primer que nivel que tenemos para ti. ¡Te esperamos! </p>
+            <a href="#formularioOrador">Quiero ser orador</a>
+            <a href="./pages/404Page.html"> Quiero comprar tickets</a>
+          </div>
+        </div>
+      </section>
+      <section class="container mb-4 seccion" id="oradores">
+        <h2 class="text-center">
+          <div class="fs-6">CONOCE A LOS</div> ORADORES
+        </h2>
+        <div class="row">
+          <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
+            <img src="./assets/img/Steve_Jobs.jpg" alt="Steve Jobs" class="w-100 h-50 definicion" loading="lazy">
+            <h4>Swift</h4>
+            <h4>JavaScript</h4>
+            <h3>Steve Jobs</h3>
+            <p>Steven Paul Jobs (San Francisco, 24 de febrero de 1955-Palo Alto, 5 de octubre de 2011) fue un empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple y máximo accionista individual de The Walt Disney Company.</p>
+          </div>
+          <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
+            <img src="./assets/img/bill.jpg" alt="Bill Gates" class="w-100 h-50 definicion" loading="lazy">
+            <h4>C++</h4>
+            <h4>BASIC</h4>
+            <h3>Bill Gates</h3>
+            <p>Bill Gates es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen, donde ocupó los cargos de presidente, director ejecutivo (CEO), presidente y arquitecto jefe de software, además de ser el mayor accionista individual hasta mayo de 2014.</p>
+          </div>
+          <div class=" border border-2 col-12 col-sm-9 col-md-8 col-lg-4">
+            <img src="./assets/img/ada.jpeg" alt="Ada Lovelace" class="w-100 h-50 definicion" loading="lazy">
+            <h4>Algoritmos</h4>
+            <h4>Assembly</h4>
+            <h3>Ada Lovelace</h3>
+            <p>Augusta Ada King, condesa de Lovelace (Londres, 10 de diciembre de 1815-íd., 27 de noviembre de 1852), fue una matemática y escritora británica, célebre por haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores..</p>
+          </div>
+        </div>
+      </section>
+      <section id="lugarFecha">
+        <div class="container-fluid colorGris">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/img/honolulu.jpg" alt="Mar del plata" width="100%" loading="lazy">
+            </div>
+            <div class="col text-start colorBlanco">
+              <h2>Buenos Aires - Octubre</h2>
+              <p>Vení a la hermosa ciudad de Buenoas Aires, con sus azules playas al margen del Río de la Plata. Octubre es un mes con días luminosos y noches frescas. Las plazas llenan de flores por la primavera. <br>
+              </p>
+              <a href="./pages/404Page.html">Conocé más</a>
+            </div>
+          </div>
+        </div>
+        <section id="formularioOrador" class="seccion">
+          <div class="text-center">
+            <h2>
+              <div class="fs-6" class="fw-bold">CONVIÉRTETE EN UN</div> ORADOR
+            </h2>
+            <p> Anótate como orador para dar una charla ignite. ¡Cuéntanos de qué quieres hablar!</p>
+            <div class="container overflow-hidden">
+              <div class="row gy-5">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="100" placeholder="¿Sobre qué quieres hablar?" required></textarea>
+                  <label for="exampleFormControlTextarea1" class="form-label text-s">Recuerda incluir un título para tu charla</label>
+                </div>
+              </div>
+            </div>
+            <button> enviar </button>
+        </section>
+    </main>
+    <footer id="footer ">
+      <ul class="nav justify-content-center nav-fill  footer">
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="./pages/404Page.html">Preguntas Frecuentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="./pages/404Page.html">Contáctanos </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="./pages/404Page.html">Prensa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="./pages/404Page.html">Conferencias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="./pages/404Page.html">Términos y Condiciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="./pages/404Page.html">Privacidad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorBlanco" href="./pages/404Page.html">Estudiantes</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
-

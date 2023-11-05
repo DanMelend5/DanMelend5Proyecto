@@ -105,32 +105,32 @@
             <form action="" class="container overflow-hidden">
               <div class="row gy-3 needs-validation" novalidate>
                 <div class="col">
-                  <input type="text" class="form-control" id="nombreValidacion" placeholder="Nombre" aria-label="Nombre" required>
-                  <div id="campoVacioValidacion" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
+                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
-                  <div id="campoVacioValidacion" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                  <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col-12">
-                  <input type="text" class="form-control" placeholder=tucorreo@email.com" aria-label="email" required>
-                  <div id="divErrorcampoVacio" class="invalid-feedback"> Ingrese un correo válido </div>
+                  <input id="correo" type="text" class="form-control" placeholder=tucorreo@email.com" aria-label="email" required>
+                  <div id="divCorreoInvalido" class="invalid-feedback"> Ingrese un correo válido </div>
                 </div>
                 <div class="col">
-                  <label for="Cantidad" class="form-label">Cantidad</label>
-                  <input type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad" required>
+                  <label for="cantidadTicket" class="form-label">Cantidad</label>
+                  <input type="text" class="form-control" placeholder="Cantidad de tickets" aria-label="Cantidad" required>
                   <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col-md-4">
-                  <label for="inputState" class="form-label " required>Categoria</label>
-                  <select id="inputState" class="form-select ">
+                  <label for="categoriaSeleccion" class="form-label " required>Categoria</label>
+                  <select id="categoriaSeleccion" class="form-select ">
                     <option selected>----</option>                    
                     <option>Estudiante</option>
                     <option>Trainee</option>
                     <option>Junior</option>
                     <option>Sin categoría</option>
                   </select>
-                  <div id="selectVacioValidacion" class="invalid-feedback"> Tiene que escoger una opción</div>
+                  <div id="divErrorSeleccion" class="invalid-feedback"> Tiene que escoger una opción</div>
                 </div>
                 <fieldset disabled>
                   <div class="col-12">

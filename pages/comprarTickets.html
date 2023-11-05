@@ -106,15 +106,15 @@
               <div class="row gy-3 needs-validation" novalidate>
                 <div class="col">
                   <input type="text" class="form-control" id="nombreValidacion" placeholder="Nombre" aria-label="Nombre" required>
-                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                  <div id="campoVacioValidacion" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido required>
-                  <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" required>
+                  <div id="campoVacioValidacion" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col-12">
                   <input type="text" class="form-control" placeholder=tucorreo@email.com" aria-label="email" required>
-                  <div id="divCorreoInvalido" class="invalid-feedback"> Ingrese un correo válido </div>
+                  <div id="divErrorcampoVacio" class="invalid-feedback"> Ingrese un correo válido </div>
                 </div>
                 <div class="col">
                   <label for="Cantidad" class="form-label">Cantidad</label>
@@ -122,15 +122,15 @@
                   <div id="divErrorcampoVacio" class="invalid-feedback"> Este campo no puede estar vacío </div>
                 </div>
                 <div class="col-md-4">
-                  <label for="inputState" class="form-label" required>Categoria</label>
-                  <select id="inputState" class="form-select">
+                  <label for="inputState" class="form-label " required>Categoria</label>
+                  <select id="inputState" class="form-select ">
                     <option selected>----</option>                    
                     <option>Estudiante</option>
                     <option>Trainee</option>
                     <option>Junior</option>
                     <option>Sin categoría</option>
                   </select>
-                  <div id="divErrorSeleccion" class="invalid-feedback">Debe seleccionar una opción</div>
+                  <div id="selectVacioValidacion" class="invalid-feedback"> Tiene que escoger una opción</div>
                 </div>
                 <fieldset disabled>
                   <div class="col-12">
@@ -139,8 +139,8 @@
               </div>
               <div class="row gy-3 py-3">
                 <div class="col text-center">
-                  <button type="submit" class="btn btn-lg btn-success">Borrar</button>
-                  <button type="submit" class="btn btn-lg btn-success">Resumen</button>
+                  <button type="submit" class="col-md-4 btn btn-lg text-center btn-success">Borrar</button>
+                  <button type="submit" class="col-md-4 btn btn-lg text-center btn-success">Resumen</button>
                 </div>
               </div>
           </div>

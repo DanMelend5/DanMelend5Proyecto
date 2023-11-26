@@ -38,6 +38,7 @@ function quitarMensajeError() {
     let arrayDivNodosErrores = document.querySelectorAll("invalid-feedback");
     for (let i = 0; i<arrayDivNodosErrores.length; i++) {
         arrayDivNodosErrores[i].classList.remove("mensajeError");
+        debugger
     }
 }
 
@@ -55,7 +56,7 @@ function totalAPagar(){
         nombre.focus();
         return;
     }
-/*
+
     if (apellido.value === ""){
         apellido.classList.add("is-invalid");
         divApellidoCampoVacio.classList.add("mensajeError");
@@ -99,12 +100,12 @@ function totalAPagar(){
 
     if (categoriaSeleccion.value == "----"){
         categoriaSeleccion.classList.add("is-invalid");
-        divErrorSeleccion.add("mensajeError");
+        divErrorSeleccion.classList.add("mensajeError");
         categoriaSeleccion.focus();
         return;
     }
     
-    */
+    
     //Multiplicar cantidad de tickets
     let totalPrecioTickets = (cantidadTicket.value * valorTicket);
 
@@ -125,6 +126,7 @@ function totalAPagar(){
 
     // Resultado aparece en el campo "total$"
         totalPago.innerHTML = totalPrecioTickets;
+
 }
 
 
@@ -133,10 +135,14 @@ btnComprar.addEventListener('click', totalAPagar);
 
 
 // Boton Borrar
+
 function reset_totalAPagar() {
     quitarMensajeError();
     totalPago.innerHTML = "";
 }
-
+ 
 btnBorrar.addEventListener('click', reset_totalAPagar);
 
+btnBorrar.addEventListener('click', function() {
+    console.log("Boton funciona");
+});

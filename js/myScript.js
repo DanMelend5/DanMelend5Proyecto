@@ -1,3 +1,5 @@
+console.log("conectado");
+
 // se define valor del ticket
 const valorTicket = 200;
 
@@ -17,20 +19,23 @@ let btnBorrar = document.getElementById("btnBorrar");
 
 
 // Elementos de mensajes de Error
-let divErrorcampoVacio = document.getElementById("divErrorCampoVacio");
-let divCorreoInvalido = document.getElementById("divCorreoInvalido");
-let divErrorSeleccion = document.getElementById("divErrorSeleccion");
+let divNombreCampoVacio     = document.getElementById("divNombreCampoVacio");
+let divApellidoCampoVacio   = document.getElementById("divApellidoCampoVacio");
+let divCorreoCampoVacio     = document.getElementById("divCorreoCampoVacio");
+let divCorreoInvalido       = document.getElementById("divCorreoInvalido");
+let divErrorSeleccion       = document.getElementById("divErrorSeleccion");
+let divCantidadCampoVacio   = document.getElementById("divCantidadCampoVacio");
 let divErrorNumerodeTickets = document.getElementById("divErrorNumerodeTickets");
 
 
 
 // Funcion para quitar error del formulario.
 function quitarMensajeError() {
-    let arrayNodosFormulario = document.querySelectorAll(".form-control, .form-select");
+    let arrayNodosFormulario = document.querySelectorAll("form-control, form-select");
     for (let i = 0; i<arrayNodosFormulario.length; i++) {
         arrayNodosFormulario[i].classList.remove("is-invalid");
     }
-    let arrayDivNodosErrores = document.querySelectorAll(".invalid-feedback");
+    let arrayDivNodosErrores = document.querySelectorAll("invalid-feedback");
     for (let i = 0; i<arrayDivNodosErrores.length; i++) {
         arrayDivNodosErrores[i].classList.remove("mensajeError");
     }
@@ -46,21 +51,21 @@ function totalAPagar(){
 
     if (nombre.value === ""){
         nombre.classList.add("is-invalid");
-        divErrorcampoVacio.classList.add("mensajeError");
+        divNombreCampoVacio.classList.add("mensajeError");
         nombre.focus();
         return;
     }
-
+/*
     if (apellido.value === ""){
         apellido.classList.add("is-invalid");
-        divErrorcampoVacio.classList.add("mensajeError");
+        divApellidoCampoVacio.classList.add("mensajeError");
         apellido.focus();
         return;
     }
 
     if (correo.value === ""){
         correo.classList.add("is-invalid");
-        divErrorcampoVacio.classList.add("mensajeError");
+        divCorreoCampoVacio.classList.add("mensajeError");
         correo.focus();
         return;
     }
@@ -80,7 +85,7 @@ function totalAPagar(){
 
     //Numero de tickets
     if ((cantidadTicket.value =="")){
-        divErrorcampoVacio.classList.add("mensajeError");  
+        divCantidadCampoVacio.classList.add("mensajeError");  
         cantidadTicket.focus();
         return; 
     }
@@ -93,12 +98,13 @@ function totalAPagar(){
     }
 
     if (categoriaSeleccion.value == "----"){
-        apellido.classList.add("is-invalid");
-        categoriaSeleccion.add("mensajeError");
+        categoriaSeleccion.classList.add("is-invalid");
+        divErrorSeleccion.add("mensajeError");
         categoriaSeleccion.focus();
         return;
     }
     
+    */
     //Multiplicar cantidad de tickets
     let totalPrecioTickets = (cantidadTicket.value * valorTicket);
 
@@ -122,14 +128,15 @@ function totalAPagar(){
 }
 
 
-// Boton Reset
+//Boton Comprar
+btnComprar.addEventListener('click', totalAPagar);
+
+
+// Boton Borrar
 function reset_totalAPagar() {
     quitarMensajeError();
     totalPago.innerHTML = "";
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    
-    btnComprar.addEventListener('click', totalAPagar);
-    btnBorrar.addEventListener('click', reset_totalAPagar);
-});
+btnBorrar.addEventListener('click', reset_totalAPagar);
+

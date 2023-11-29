@@ -31,14 +31,16 @@ let divErrorNumerodeTickets = document.getElementById("divErrorNumerodeTickets")
 
 // Funcion para quitar error del formulario.
 function quitarMensajeError() {
-    let arrayNodosFormulario = document.querySelectorAll("form-control, form-select");
-    for (let i = 0; i<arrayNodosFormulario.length; i++) {
-        arrayNodosFormulario[i].classList.remove("is-invalid");
+    let arrayNodosFormulario = document.querySelectorAll(".form-control, .form-select");
+    for (let i = 0; i < arrayNodosFormulario.length; i++) {
+        arrayNodosFormulario[i].classList.remove(".invalid-feedback");
+        console.log("Removed 'is-invalid' class");
     }
-    let arrayDivNodosErrores = document.querySelectorAll("invalid-feedback");
-    for (let i = 0; i<arrayDivNodosErrores.length; i++) {
-        arrayDivNodosErrores[i].classList.remove("mensajeError");
-        debugger
+
+    let arrayDivNodosErrores = document.querySelectorAll(".invalid-feedback");
+    for (let i = 0; i < arrayDivNodosErrores.length; i++) {
+        arrayDivNodosErrores[i].classList.remove(".mensajeError");
+        console.log("Removed 'mensajeError' class");
     }
 }
 
@@ -97,6 +99,10 @@ function totalAPagar(){
         return; 
 
     }
+	
+	  //Multiplicar cantidad de tickets
+	  let totalPrecioTickets = (cantidadTicket.value * valorTicket);
+		
 
     if (categoriaSeleccion.value == "----"){
         categoriaSeleccion.classList.add("is-invalid");
@@ -106,26 +112,33 @@ function totalAPagar(){
     }
     
     
-    //Multiplicar cantidad de tickets
-    let totalPrecioTickets = (cantidadTicket.value * valorTicket);
+  
 
     switch (categoriaSeleccion.value){
-        case "0":
-            totalPrecioTickets;
-            break;
-        case "1":
+		case "Otro":
+			totalPrecioTickets;
+			console.log("otro " + totalPrecioTickets);
+			
+			break;
+
+        case "Estudiante":
             totalPrecioTickets = totalPrecioTickets - (descuentoEstudiante / 100 * totalPrecioTickets);
+			console.log ("Estudiante");
             break;
-        case "2":
+        case "Trainee":
             totalPrecioTickets = totalPrecioTickets - (descuentoTrainee / 100 * totalPrecioTickets);
+			console.log ("trainee " +  totalPrecioTickets);
             break;
-        case "3":
+        case "Junior":
             totalPrecioTickets = totalPrecioTickets - (descuentoJunior / 100 * totalPrecioTickets);
+			console.log ("junior");
             break;
     }
 
     // Resultado aparece en el campo "total$"
-        totalPago.innerHTML = totalPrecioTickets;
+   // Resultado aparece en el campo "total$"
+ 	totalPago.value = totalPrecioTickets;
+
 
 }
 
@@ -137,12 +150,8 @@ btnComprar.addEventListener('click', totalAPagar);
 // Boton Borrar
 
 function reset_totalAPagar() {
-    quitarMensajeError();
-    totalPago.innerHTML = "";
+   	quitarMensajeError();
+    totalPago.value = "";
 }
  
 btnBorrar.addEventListener('click', reset_totalAPagar);
-
-btnBorrar.addEventListener('click', function() {
-    console.log("Boton funciona");
-});

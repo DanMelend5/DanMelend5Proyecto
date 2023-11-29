@@ -26,7 +26,6 @@ let divErrorSeleccion = document.getElementById("divErrorSeleccion");
 let divCantidadCampoVacio = document.getElementById("divCantidadCampoVacio");
 let divErrorNumerodeTickets = document.getElementById("divErrorNumerodeTickets");
 
-GIT
 
 // Funcion para quitar error del formulario.
 function quitarMensajeError() {
